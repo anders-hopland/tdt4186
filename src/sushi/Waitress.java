@@ -45,6 +45,9 @@ public class Waitress implements Runnable {
                 }
                 else {
                     SushiBar.write("Waitress with id " + this.id + " is waiting for customers");
+                    synchronized (waitingArea) {
+                        waitingArea.wait();
+                    }
                 }
             }
             catch(InterruptedException ex)

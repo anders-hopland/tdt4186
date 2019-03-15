@@ -36,6 +36,10 @@ public class WaitingArea {
 
         if (qLength < this.size) {
             this.queue.add(customer);
+            synchronized (this) {
+                this.notify();
+            }
+
             return true;
         }
         else return false;
@@ -45,7 +49,12 @@ public class WaitingArea {
      * @return The customer that is first in line.
      */
     public synchronized Customer next() {
-        if (!this.queue.isEmpty()) return this.queue.poll();
+        if (!this.queue.isEmpty()) {
+            synchronized (this) {
+                this.notify();
+            }
+            return this.queue.poll();
+        }
         else return null;
     }
 
