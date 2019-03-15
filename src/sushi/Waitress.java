@@ -35,7 +35,8 @@ public class Waitress implements Runnable {
             {
                 Customer customer = waitingArea.next();
                 if (customer != null) {
-                    SushiBar.write("Waitress with id: " + this.id + " is waiting " + customer.getCustomerID());
+                    //SushiBar.write("Waitress with id: " + this.id + " is waiting " + customer.getCustomerID());
+                    SushiBar.write("Customer #ID " + customer.getCustomerID() + " is now fetched");
 
                     // Sleep
                     Thread.sleep(SushiBar.waitressWait);

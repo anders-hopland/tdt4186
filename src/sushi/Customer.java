@@ -28,6 +28,8 @@ public class Customer {
        {
            Thread.sleep(SushiBar.customerWait); // Wait
 
+           SushiBar.write("Customer #ID " + this.id + " is now eating");
+
            int numOrders = Math.abs(random.nextInt(SushiBar.maxOrder));
 
            // random bound must be greater than 0
@@ -40,12 +42,14 @@ public class Customer {
            SushiBar.servedOrders.add(numOrders - bringHomeOrders);
            SushiBar.totalOrders.add(numOrders);
 
+           SushiBar.write("Customer #ID " + this.id + " is now leaving");
+
            // Log events
-           SushiBar.write(
+           /*SushiBar.write(
                     "Customer is: " + this.id +
                         ", total orders: " + numOrders +
                         ", took home " + bringHomeOrders
-            );
+            );*/
        }
        catch(InterruptedException ex)
        {
