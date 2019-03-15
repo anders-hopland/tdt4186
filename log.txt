@@ -1,0 +1,95 @@
+08:16:37:78, Beginning
+08:16:37:78, Beginning
+08:16:37:78, Beginning
+08:16:37:78, Beginning
+08:16:37:78, Beginning
+08:16:37:78, Beginning
+08:16:37:78, Beginning
+08:16:37:78, Beginning
+08:16:37:103, Waitress with id 0 is waiting for customers
+08:16:37:103, Waitress with id 6 is waiting for customers
+08:16:37:103, Waitress with id 3 is waiting for customers
+08:16:37:103, Waitress with id 1 is waiting for customers
+08:16:37:103, Waitress with id 7 is waiting for customers
+08:16:37:103, Waitress with id 5 is waiting for customers
+08:16:37:103, Waitress with id 4 is waiting for customers
+08:16:37:103, Waitress with id 2 is waiting for customers
+08:16:37:369, Customer entered
+08:16:37:374, Customer #ID 0 is now fetched
+08:16:37:375, Waitress with id 4 is waiting for customers
+08:16:37:574, Customer entered
+08:16:37:579, Customer #ID 1 is now fetched
+08:16:37:579, Waitress with id 1 is waiting for customers
+08:16:37:880, Customer entered
+08:16:37:885, Waitress with id 6 is waiting for customers
+08:16:37:885, Customer #ID 2 is now fetched
+08:16:38:184, Customer entered
+08:16:38:189, Waitress with id 0 is waiting for customers
+08:16:38:189, Customer #ID 3 is now fetched
+08:16:38:289, Customer entered
+08:16:38:293, Waitress with id 1 is waiting for customers
+08:16:38:294, Customer #ID 4 is now fetched
+08:16:38:494, Customer entered
+08:16:38:498, Customer #ID 5 is now fetched
+08:16:38:498, Waitress with id 0 is waiting for customers
+08:16:38:799, Customer entered
+08:16:38:804, Customer #ID 6 is now fetched
+08:16:38:804, Waitress with id 0 is waiting for customers
+08:16:38:904, Customer entered
+08:16:38:909, Customer #ID 7 is now fetched
+08:16:39:09, Customer entered
+08:16:39:214, Customer entered
+08:16:39:320, Customer entered
+08:16:39:430, Customer #ID 0 is now eating
+08:16:39:435, Customer #ID 0 is now leaving
+08:16:39:439, Customer #ID 8 is now fetched
+08:16:39:636, Customer #ID 1 is now eating
+08:16:39:641, Customer #ID 1 is now leaving
+08:16:39:645, Customer #ID 9 is now fetched
+08:16:39:826, Customer entered
+08:16:39:940, Customer #ID 2 is now eating
+08:16:39:945, Customer #ID 2 is now leaving
+08:16:39:948, Customer #ID 10 is now fetched
+08:16:40:244, Customer #ID 3 is now eating
+08:16:40:248, Customer #ID 3 is now leaving
+08:16:40:252, Customer #ID 11 is now fetched
+08:16:40:349, Customer #ID 4 is now eating
+08:16:40:353, Customer #ID 4 is now leaving
+08:16:40:356, Waitress with id 4 is waiting for customers
+08:16:40:433, Customer entered
+08:16:40:438, Customer #ID 12 is now fetched
+08:16:40:553, Customer #ID 5 is now eating
+08:16:40:557, Customer #ID 5 is now leaving
+08:16:40:561, Waitress with id 6 is waiting for customers
+08:16:40:739, Customer entered
+08:16:40:744, Customer #ID 13 is now fetched
+08:16:40:843, Customer entered
+08:16:40:859, Customer #ID 6 is now eating
+08:16:40:864, Customer #ID 6 is now leaving
+08:16:40:868, Customer #ID 14 is now fetched
+08:16:40:962, Customer #ID 7 is now eating
+08:16:40:967, Customer #ID 7 is now leaving
+08:16:40:971, Waitress with id 0 is waiting for customers
+08:16:41:148, Customer entered
+08:16:41:153, Closing door
+08:16:41:494, Customer #ID 8 is now eating
+08:16:41:499, Customer #ID 8 is now leaving
+08:16:41:698, Customer #ID 9 is now eating
+08:16:41:703, Customer #ID 9 is now leaving
+08:16:42:03, Customer #ID 10 is now eating
+08:16:42:08, Customer #ID 10 is now leaving
+08:16:42:307, Customer #ID 11 is now eating
+08:16:42:312, Customer #ID 11 is now leaving
+08:16:42:491, Customer #ID 12 is now eating
+08:16:42:496, Customer #ID 12 is now leaving
+08:16:42:799, Customer #ID 13 is now eating
+08:16:42:803, Customer #ID 13 is now leaving
+08:16:42:923, Customer #ID 14 is now eating
+08:16:42:928, Customer #ID 14 is now leaving
+08:16:42:931, 
+
+Sushibar has now closed
+08:16:42:935, Served 15 people
+08:16:42:939, Total numer of dishes 57
+08:16:42:943, Eaten at the restaurant 29 dishes
+08:16:42:946, Brought home 28 number of dishes
