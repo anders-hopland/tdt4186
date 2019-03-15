@@ -1,3 +1,5 @@
+package sushi;
+
 public class SynchronizedInteger {
     private int c ;
 

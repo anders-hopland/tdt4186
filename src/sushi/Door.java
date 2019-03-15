@@ -1,3 +1,5 @@
+package sushi;
+
 import java.util.Random;
 
 /**
@@ -28,19 +30,29 @@ public class Door implements Runnable {
      */
     @Override
     public void run() {
-        while (true) {
+        while (SushiBar.isOpen) {
             try
             {
                 Thread.sleep(this.waitInterval);
                 if (this.random.nextInt(77) > 48) {
-                    this.waitingArea.enter(new Customer(nextCustomerId));
-                    this.nextCustomerId++;
+                    if (this.waitingArea.enter(new Customer(nextCustomerId))) {
+                        this.nextCustomerId++;
+                    }
+                    else {
+                        SushiBar.write("Waiting area is full");
+                    }
+
                 }
             }
             catch(InterruptedException ex)
             {
                 Thread.currentThread().interrupt();
             }
+        }
+
+        SushiBar.write("Closing door");
+        synchronized (waitingArea) {
+            waitingArea.notifyAll();
         }
     }
 

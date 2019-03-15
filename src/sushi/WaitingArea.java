@@ -1,4 +1,5 @@
-import java.util.PriorityQueue;
+package sushi;
+
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -26,7 +27,8 @@ public class WaitingArea {
      *
      * @param customer A customer created by Door, trying to enter the waiting area
      */
-    public synchronized void enter(Customer customer) {
+    public synchronized boolean enter(Customer customer) {
+        SushiBar.write("Customer entered");
         int qLength = 0;
         for (Customer c : this.queue) {
             qLength++;
@@ -34,8 +36,9 @@ public class WaitingArea {
 
         if (qLength < this.size) {
             this.queue.add(customer);
-            System.out.println("Customer added to queue");
+            return true;
         }
+        else return false;
     }
 
     /**

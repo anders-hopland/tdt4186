@@ -1,3 +1,5 @@
+package sushi;
+
 import java.util.Random;
 
 /**
@@ -8,15 +10,17 @@ public class Waitress implements Runnable {
 
     private WaitingArea waitingArea;
     private Random random;
+    private int id;
 
     /**
      * Creates a new waitress. Make sure to save the parameter in the class
      *
      * @param waitingArea The waiting area for customers
      */
-    Waitress(WaitingArea waitingArea) {
+    Waitress(WaitingArea waitingArea, int id) {
         this.waitingArea = waitingArea;
-        this.random = new Random();
+         this.id = id;
+         this.random = new Random();
     }
 
     /**
@@ -25,15 +29,22 @@ public class Waitress implements Runnable {
      */
     @Override
     public void run() {
-        while (true) {
+        SushiBar.write("Beginning");
+        while (SushiBar.isOpen) {
             try
             {
-                System.out.println("Entered waitress");
-                Thread.sleep(50);
-                if (this.random.nextInt(77) > 15) {
-                    this.waitingArea.next().order();
+                Customer customer = waitingArea.next();
+                if (customer != null) {
+                    SushiBar.write("Waitress with id: " + this.id + " is waiting " + customer.getCustomerID());
+
+                    // Sleep
+                    Thread.sleep(SushiBar.waitressWait);
+
+                    customer.order();
                 }
-                System.out.println("Eaten");
+                else {
+                    SushiBar.write("Waitress with id " + this.id + " is waiting for customers");
+                }
             }
             catch(InterruptedException ex)
             {
